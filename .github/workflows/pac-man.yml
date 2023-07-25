@@ -62,17 +62,18 @@ jobs:
       matrix:
         os: [
           # Standard runners. If you need to consume entitlements quicker, list macos-latest multiple times.
-          ubuntu-latest, windows-latest, macos-latest,
+          # ubuntu-latest, windows-latest, macos-latest,
           
           # macOS 12-core
-          macos-13-xl,
+          # macos-13-xl,
           
           # macOS 6-core (or sometimes called 8-core). Not generaly available yet. Ask the Actions team to enable for your org.
           # macos-13-xl-arm64,
           
           # Larger runners. You need to manually create matching runners in Org -> Settings -> Actions -> Runners.
           # The REST API to automate the runner creation is currently in private beta.
-          # ubuntu-4, ubuntu-8, ubuntu-16, ubuntu-32, ubuntu-64,
+            ubuntu-larger-4,
+          # ubuntu-8, ubuntu-16, ubuntu-32, ubuntu-64,
           # windows-8, windows-16, windows-32, windows-64,
 
         ]
